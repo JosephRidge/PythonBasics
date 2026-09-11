@@ -4,8 +4,9 @@ DATA TYPES:
 - influenced by ASCII Table(https://www.asciitable.com/)
 - It stems from a class(basically a blue-print to create a real world thing object) and when we create a variable we actually create an instance of that class making an object
 - Types: 
-    - Number (Integers & Floating)
+    - Number (Integers | Floating | Complex)
     - Text (String)
+    - Boolean
     - Lists (arrays, tuple, set)
     - Dictionary
 """
@@ -71,9 +72,11 @@ Rule:
     - it can be enclosed in either 'single quotes' or "double quotes" or """"""
 
 Methods: 
-- toUpper()
-- toLower()
-- isin()
+
+refer to this: https://www.w3schools.com/python/python_strings_methods.asp
+    - toUpper()
+    - toLower()
+    - isin()
 
 """
 
@@ -101,6 +104,83 @@ output = first_name[0: 8: 3] # start counts from position 0 to last positoin but
 
 output = len(first_name) # gets the size of a string
  
+#   methods
+station_name = "Kipro"
+# abc@example.com equal to ABC@example.com
+email = "abc@example.com"
+
+output = station_name.rindex("p") # returns the index
+output = email
+output = email.upper()
+output = email.lower()
+output = email.endswith("m") #  this acts as a predicate(returns either True or False)
+
+"""
+if we were not to use rindex() we would run it like this: 
+    - get the string 
+    - get the target string/ character you want to search for
+    - assign the starting index = 0
+    - check the first element
+    - if element is equivalent to the target character we stop 
+    - else add one to the index and continue the search
+"""
+
+i = 0
+target_char = "p"
+station_name = station_name.lower()
+
+for character in station_name:
+    # print(character)
+    if target_char == character:
+        break
+    else:
+        i = i + 1
+    
+output = i
+
+first_name = "John"
+second_name = "Kamau"
+last_name = "Doe"
+
+output = first_name + " " + second_name + " " + last_name # concatenation
+output = f"{first_name} {second_name} {last_name}"
+
+
+"""
+Boolean:
+    - simply a True or False statement/ outcome
+    - can be triggered when testing conditions or invoking predicates
+    - class: <class 'bool'>
+
+Rule: 
+    - always start your naming as though yo are questioning the outcome eg is_fan_on
+"""
+
+isCold = True 
+
+output = isCold
+output = type(isCold)
+
+"""
+Truth table
+
+"""
+isCold = True
+hasSweater = False 
+
+if (isCold and not hasSweater):
+    output = "you will be ok!"
+else:
+    output = "flue on thre rise!"
+
+output = isCold
+output = not isCold # not negates the outcome of the inital definition
+
+"""
+lists 
+"""
+
+
 print("="*50)
 print(output)
 print("="*50)
