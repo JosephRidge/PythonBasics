@@ -176,10 +176,56 @@ else:
 output = isCold
 output = not isCold # not negates the outcome of the inital definition
 
+# example working with reange 
+output = ""
+for i in range(1,10, 2):
+    output = output +  str(i)  # this can also be written as output += str(i)
+
 """
-lists 
+Lists:
+    - collection of items/ elements
+    - Types: 
+        - array
+        - Tuple
+        - Set
+    - counting starts from  hence we use index for positional access
 """
 
+"""
+array list
+    - enclosed within []
+    - contains its own methods
+    - we access elements using index
+"""
+
+fruits = ["apple", "mango","pineapples", "kiwi" ] # best practice to have single type of data in list
+output = fruits
+# lusst with different data types
+# fruits = ["apple", "mango","pineapples", "kiwi" , 1, 23, 90.99] # not best practice 
+output = fruits
+
+# for fruit in fruits:
+#     print(fruit.upper())  # AttributeError: 'int' object has no attribute 'upper'
+
+fruits.append("banana")
+fruits.append("watermelon")
+fruits.append("green apple")
+fruits.append("oranges")
+fruits.append("tangerines")
+
+output = fruits
+
+output = fruits [2:]
+output = fruits [0:10]
+output = fruits [0:10: 2]
+
+# output = fruits[len(fruits)]
+output = len(fruits)
+
+for index, i in enumerate(fruits): # enumerate takes up a list and assigns an index and to each 
+    print(index)
+
+output = fruits[len(fruits) - 1]
 
 print("="*50)
 print(output)
