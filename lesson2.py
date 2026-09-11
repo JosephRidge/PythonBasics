@@ -62,11 +62,45 @@ root = 2j
 output = type(root)
 
 
+"""
+Text:
+    - This is a collection of characters
+    - class: <class 'str'>
 
+Rule: 
+    - it can be enclosed in either 'single quotes' or "double quotes" or """"""
 
+Methods: 
+- toUpper()
+- toLower()
+- isin()
 
+"""
 
+first_name = "John Doe"  
+second_name = 'Mark'
+last_name = "M"
 
+output = first_name
+output = type(first_name)
+output = type(second_name)
+output = type(last_name)
+
+output = first_name[0]   # accessing first element within the string 
+output = first_name[-1]  # accessing last element within the string 
+
+# Slicing
+output = first_name[0:4] # it will slice the string and start from position 0 to position 3
+output = first_name[0:5] # it will slice the string and start from position 0 to position 4
+output = first_name[2:]  # it will slice the string and start from position 2 to the end
+output = second_name[-3:]
+
+# Slicing with a step
+output = first_name[0: 8: 2] # start counts from position 0 to last positoin but wit a step of 2
+output = first_name[0: 8: 3] # start counts from position 0 to last positoin but wit a step of 3
+
+output = len(first_name) # gets the size of a string
+ 
 print("="*50)
 print(output)
 print("="*50)
