@@ -9,6 +9,8 @@ DATA TYPES:
     - Boolean
     - Lists (arrays, tuple, set)
     - Dictionary
+
+Good read:https://docs.python.org/3/tutorial/introduction.html#
 """
 
 #  Number (Integers & Float)
