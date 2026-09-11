@@ -189,6 +189,7 @@ Lists:
         - Tuple
         - Set
     - counting starts from  hence we use index for positional access
+    - they are mutable however a string is immutable despite being a list
 """
 
 """
@@ -196,6 +197,9 @@ array list
     - enclosed within []
     - contains its own methods
     - we access elements using index
+
+Methods: https://www.w3schools.com/python/python_lists_methods.asp
+
 """
 
 fruits = ["apple", "mango","pineapples", "kiwi" ] # best practice to have single type of data in list
@@ -222,10 +226,37 @@ output = fruits [0:10: 2]
 # output = fruits[len(fruits)]
 output = len(fruits)
 
-for index, i in enumerate(fruits): # enumerate takes up a list and assigns an index and to each 
-    print(index)
+# for index, i in enumerate(fruits): # enumerate takes up a list and assigns an index and to each 
+#     print(index)
 
 output = fruits[len(fruits) - 1]
+
+user_name = "Avenger"
+
+output = ""
+for character in user_name:
+    print(character)
+    if character == 'e':
+        character = 'i'
+    output += character # concetanation
+
+# user_name [0] = 'S' # evokes an error: TypeError: 'str' object does not support item assignment hence strings are immutable lists 
+output = user_name
+
+"""
+Tuples: 
+    - enclosed in ()
+    - immutable 
+    - use for non-changeable elements
+    - class: <class 'tuple'>
+
+it contains methods: https://www.w3schools.com/python/python_tuples_methods.asp
+
+"""
+
+color = ("Red", "Green", "Blue")
+# color = color.append("Yellow") # AttributeError: 'tuple' object has no attribute 'append'
+output = type(color)
 
 print("="*50)
 print(output)
