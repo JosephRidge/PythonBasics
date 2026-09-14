@@ -237,7 +237,7 @@ user_name = "Avenger"
 
 output = ""
 for character in user_name:
-    print(character)
+    # print(character)
     if character == 'e':
         character = 'i'
     output += character # concetanation
@@ -259,6 +259,106 @@ it contains methods: https://www.w3schools.com/python/python_tuples_methods.asp
 color = ("Red", "Green", "Blue")
 # color = color.append("Yellow") # AttributeError: 'tuple' object has no attribute 'append'
 output = type(color)
+
+
+"""
+Dictionary: 
+    - Key: Value pair data stucture
+    - fast to access due to the assignment of a key to each value
+    - it cointains its own methods
+    - defined using {}
+"""
+
+
+student = {
+    "name": "John Doe", 
+    "age": 12, 
+    "course": "Software"
+}
+
+
+output = student
+output = f"My name is {student["name"]}, I am {student["age"]} years old, currently studying {student["course"]}"
+output = student.items() # returns a tuple of each key-value pair
+output = student.values() # returns the values of the data
+
+
+
+student = {
+    "name": "John Doe",
+    "age": 12, 
+    "course": ["Software Engineering", "Data Analysis", "Data Structure"], 
+    "hobby":{
+        "wit": "reading random technical books", 
+        "exercise":"cycle", 
+        "creativity": "paint", 
+        "extra-curriculla": "hunting bears"
+    },
+    "isKenyan": False
+}
+
+output = student
+output = student["hobby"]
+output = student["course"]
+
+# TODO: Check loop in dictionary**
+
+# for course in student["course"]:
+#     print(course)
+
+
+"""
+SETS:
+    - this is a collection of unique items
+    - defined using {}
+    - composed of mehtods such as join, union, intersect etc 
+
+
+eg: 
+- dataframe(can be a 2D or 1D data type)
+
+df1 = {1,2,3,4,5,6}
+df2 = {1,2,3,7,8,9}
+
+df1 and df2 = {{1,2,3}
+
+"""
+
+fruits = ["apple", "mango","pineapples", "kiwi"] # best practice to have single type of data in list
+output = fruits
+# lusst with different data types
+# fruits = ["apple", "mango","pineapples", "kiwi" , 1, 23, 90.99] # not best practice 
+output = fruits
+
+# for fruit in fruits:
+#     print(fruit.upper())  # AttributeError: 'int' object has no attribute 'upper'
+
+def addFruits(fruits):
+    fruits.append("apple")
+    fruits.append("mango")
+    fruits.append("pineapples")
+    fruits.append("banana")
+    fruits.append("watermelon")
+    fruits.append("green apple")
+    fruits.append("oranges")
+    fruits.append("tangerines")
+    return fruits
+
+addFruits(fruits)
+addFruits(fruits)
+addFruits(fruits)
+
+
+output = fruits
+output = type(fruits)
+
+unique_fruits = set(fruits) # parsed from list to sets
+
+output = unique_fruits
+unique_fruits.pop()
+unique_fruits.remove("kiwi")
+output = unique_fruits
+
 
 print("="*50)
 print(output)
