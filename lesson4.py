@@ -1,7 +1,7 @@
 """
 - Loops
-- Functions
-- Intro to OOP
+- Functions (parametrized, non parametrized, anonymous )
+- Intro to Object Oriented Programming (class)
 
 """
 
